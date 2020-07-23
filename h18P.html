@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <style>
+        body{
+            margin: 0px ;
+            padding: 0px;
+            background: url('P4.jpg');
+            /* background-color: black; */
+            /* height: 2000px; */
+            /* background-repeat: no-repeat; */
+            color: azure;
+            
+            /* background-repeat: no-repeat; */
+        }
+        .left{
+           /* border: 2px solid red; */
+           display: inline-block;
+           position: absolute;
+            left:41px;
+            top:18px;
+        }
+        .mid{
+            /* border: 2px solid red; */
+            position: absolute;
+            left:30%;
+            right:30%;
+            top:25px;
+            padding: 10px;
+            margin: auto;
+
+        }
+        .right{
+            display: inline-block;
+            /* border: 2px solid red; */
+            /* float: right; */
+            position: absolute;
+            right:17px;
+            top:37px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{ 
+            display: inline-block;
+            padding: 1px 15px;
+            font-size: 39px;
+            
+        }
+        .navbar li a{ 
+            
+            padding: 3px;
+            text-decoration: none;
+            color: azure;
+            
+        } 
+        .navbar li a:hover ,.navbar li a.active{ 
+            
+            text-decoration: underline;
+            background-color:rgb(122, 117, 117);
+        } 
+        
+        .left p{
+            text-align: center;
+            margin: 0px ;
+        }
+        .btn{
+            margin:0px 7px ;
+            padding:6px 37px ;
+            background-color: black;
+            color: aliceblue;
+            border: 2px solid white;
+            border-radius: 12px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: grey;
+        }
+        .container{
+            border: 21px solid palevioletred;
+            /* font-size: 140px; */
+            margin: 335px 81px  auto 1180px;
+            width: 34%;
+            padding: 30px 30px;
+            height: 340px;
+            border-radius: 9px;
+        }
+        .container input{
+            margin: 17px auto ;
+            /* position: relative; */
+            /* left:9%; */
+            padding: 8px 77px;
+            text-align: center;
+            padding: 8px;
+            width: 90%;
+            display: block;
+            border-radius: 7px;
+        }
+        h1{
+            text-align: center;
+            font-style:oblique;
+           
+        }
+        div form .btn{
+            width: 93%;
+            display: block;
+            font-size: 25px;
+            margin: 7px 24px;
+            /* font-style: i talic; */
+        }  
+        /* .left img{
+            width: 90px;
+            filter: invert(1000%);
+            height: 90px;
+           
+        } */
+        .left img{
+            width: 126px;
+            filter: invert(1000%);
+           
+        } 
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+           <img src="P3.jpg"> 
+           <!-- <img src="P2.webp">  -->
+           <p>Fitness Gym</p>
+        </div>
+        <div class="mid">
+            <div class="navbar">
+                <li><a href="#" class="active" >Home</a></li>
+                <li><a href="#" >About Us</a></li>
+                <li><a href="#" >Services</a></li>
+                <li><a href="#" >Contact Details</a></li>
+            </div>
+        </div>
+        <div class="right">
+            <button class="btn" >Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Best Gym in Haryana</h1>
+        <form action="abc.php" >
+            <input type="text" class="name" placeholder="Enter your name">
+            <input type="text" class="age" placeholder="Enter your age">
+            <input type="text" class="gender" placeholder="Enter your gender">
+            <input type="text" class="locality" placeholder="Enter your locality">
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
